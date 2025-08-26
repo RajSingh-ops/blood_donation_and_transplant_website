@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood donation website</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        Welcome to the Blood+ donation website
+    </div>
+    <div id="body">
+        <img src="https://tse3.mm.bing.net/th/id/OIP.y0-MkQ7CjAXS24G5LvXtmwHaFj?pid=Api&P=0&h=180">
+        <a href="blooddonreg.html"><button>Register Now for Blood Donation </button></a>
+        <a href="transplant.html"><button>Register for getting blood </button></a>
+        <button id="admin">login as admin</button>
+        <br><br>
+   
+    </div>
+     <div id="imp">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.4Q5gGLqJtLCkkagyTTX_3wHaHg?pid=Api&P=0&h=180" alt="open your net">
+            <pre>
+                <h1>Why should donate blood?</h1>
+Our nation requires 4 Crore Units of Blood while only 40 lakh units are available.
+ Every two seconds someone needs Blood. There is no substitute for Human Blood. 
+ It cannot be manufactured. Blood donation is an extremely noble deed, yet there 
+ is a scarcity of regular donors across India. We focus on creating & expanding a
+  virtual army of blood donating volunteers who could be searched and contacted by
+   family / care givers of a patient in times of need.
+            </pre>
+        </div>
+        <div id="learnabtdon" style=" background-color: aqua;">
+<h1>Learn about blood donation</h1><br>
+
+<button id="ap">A+</button>
+<button id="op">O+</button>
+<button id="bp">B+</button>
+<button id="abp">AB+</button>
+<button id="am">A-</button>
+<button id="om">O-</button>
+<button id="bm">B-</button>
+<button id="abm">AB-</button><br>
+
+<h1>you could give blood to:</h1><br>
+<div id="giveResult" style="background-color: orangered; min-height: 30px;"></div><br>
+
+<h1>you could take blood from</h1><br>
+<div id="takeResult" style="background-color: chartreuse; min-height: 30px;"></div>
+</div>
+<script>
+    const giveDiv = document.querySelector("#giveResult");
+const takeDiv = document.querySelector("#takeResult");
+
+document.querySelector("#ap").addEventListener("click", () => {
+    giveDiv.innerText = "A+, AB+";
+    takeDiv.innerText = "A+, A-, O+, O-";
+});
+
+document.querySelector("#am").addEventListener("click", () => {
+    giveDiv.innerText = "A+, A-, AB+, AB-";
+    takeDiv.innerText = "A-, O-";
+});
+
+document.querySelector("#bp").addEventListener("click", () => {
+    giveDiv.innerText = "B+, AB+";
+    takeDiv.innerText = "B+, B-, O+, O-";
+});
+
+document.querySelector("#bm").addEventListener("click", () => {
+    giveDiv.innerText = "B+, B-, AB+, AB-";
+    takeDiv.innerText = "B-, O-";
+});
+
+document.querySelector("#abp").addEventListener("click", () => {
+    giveDiv.innerText = "AB+";
+    takeDiv.innerText = "Everyone (universal recipient)";
+});
+
+document.querySelector("#abm").addEventListener("click", () => {
+    giveDiv.innerText = "AB+, AB-";
+    takeDiv.innerText = "A-, B-, AB-, O-";
+});
+
+document.querySelector("#op").addEventListener("click", () => {
+    giveDiv.innerText = "O+, A+, B+, AB+";
+    takeDiv.innerText = "O+, O-";
+});
+
+document.querySelector("#om").addEventListener("click", () => {
+    giveDiv.innerText = "Everyone (universal donor)";
+    takeDiv.innerText = "O-";
+});
+
+        
+    </script>
+
+</body>
+<footer>
+    contact details: bloodp@gmail.com<br>
+    © 2025 Blood+ Donation Website. All rights reserved. <br>
+<a href="aboutus.html">about us</a>&nbsp;&nbsp;
+<a href="somefacts.html">some facts about blood donation</a>
+
+</footer>
+</html>

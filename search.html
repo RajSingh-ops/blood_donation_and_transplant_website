@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search for a Donor</title>
+    <link rel="stylesheet" href="admin.css"> 
+</head>
+<body>
+    <header>
+        <h1>Find a Blood Donor</h1>
+    </header>
+    <main style="padding: 20px;">
+        <div class="data-section">
+            <h2>Enter Search Criteria</h2>
+            <form action="search.php" method="get">
+                <label for="btype">Blood Type:</label>
+                <select name="btype" required>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                </select>
+
+                <label for="city" style="margin-left: 20px;">City:</label>
+                <input type="text" name="city" placeholder="e.g., Greater Noida" required>
+
+                <button type="submit" style="background-color: #d32f2f; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Search</button>
+            </form>
+        </div>
+        
+        </main>
+</body>
+</html>
